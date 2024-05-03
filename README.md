@@ -1,7 +1,7 @@
-# DevOps ShortProject: Restaurant Rating App
+# ShortProject2: Welcome App
 
 # Overview
-This project aims to develop a simple web application (Ratingapp) using Python and Django and deploy it on Tomcat running in Docker containers using Jenkins pipeline for automated building and deployment.
+The objective of this project is to build a straightforward web application using Python and Django, and then deploy it on Tomcat within Docker containers. This deployment process will be automated using a Jenkins pipeline.
 
 # Features
 1. Homepage displaying the restaurants.
@@ -15,7 +15,7 @@ This project aims to develop a simple web application (Ratingapp) using Python a
 
 
 # Steps to run Locally
-1. Clone the Repository 
+1. Clone the Repository
    - git clone https://github.com/HCharlesjc/ratingapp.
 
 2. Navigate to project folder
@@ -23,13 +23,13 @@ This project aims to develop a simple web application (Ratingapp) using Python a
 
 3. Install Python dependencies
    - pip install -r requirements.txt
-    
+
 4. Run Django development server
    - python manage.py runserver
 
 5. Access the Web Application:
    - Open your web browser and go to http://localhost:8000
-    
+
 
 # Jenkins Pipeline Configuration
 The Jenkins pipeline automates the build and deployment process of the web application using Docker containers.

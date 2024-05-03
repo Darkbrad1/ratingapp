@@ -1,19 +1,19 @@
 pipeline {
     agent any
-    
+
     environment {
-        DOCKER_IMAGE = 'hcharlesjc/ratingapp' 
-        DOCKER_TAG = 'latest' 
+        DOCKER_IMAGE = 'backvanta/welcome-app'
+        DOCKER_TAG = 'latest'
     }
 
     stages {
         stage('Checkout') {
             steps {
                 // Checkout the code from Git repo
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: 
-                [[credentialsId: 'githubtoken', url: 'https://github.com/HCharlesjc/ratingapp.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
+                [[credentialsId: 'githubtoken', url: 'https://github.com/HCharlesjc/welcome-app.git']])
             }
-            
+
         }
 
         stage('Build Docker Image') {
